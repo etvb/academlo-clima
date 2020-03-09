@@ -11,7 +11,7 @@ ultimaEntrada();
 
 function ultimaEntrada(){
   //guarda y dibuja la ultima vez que se uso
-  axios.get('http://api.openweathermap.org/data/2.5/weather?q='+localStorage.getItem('ciudad2')+'&appid=01ba69f16632f972aa1d53518621137c&units=metric&lang=es')
+  axios.get('https://api.openweathermap.org/data/2.5/weather?q='+localStorage.getItem('ciudad2')+'&appid=01ba69f16632f972aa1d53518621137c&units=metric&lang=es')
   .then(function (response){
     console.log(response.data);
     description = response.data.weather[0].description;
