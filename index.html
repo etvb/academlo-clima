@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/weather-icons.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+  <div class= "container border mt-5 ">
+    <div class="row">
+      <div class="col">
+        <select name="estados" class="tamanoSelect" id="estado" onchange="cambio()">
+          <option value="0">Todo México</option>
+          <option value="1">Aguascalientes</option>
+          <option value="2">Baja California</option>
+          <option value="3">Baja California Sur</option>
+          <option value="4">Campeche</option>
+          <option value="5">Coahuila de Zaragoza</option>
+          <option value="6">Colima</option>
+          <option value="7">Chiapas</option>
+          <option value="8">Chihuahua</option>
+          <option value="9">Distrito Federal</option>
+          <option value="10">Durango</option>
+          <option value="11">Guanajuato</option>
+          <option value="12">Guerrero</option>
+          <option value="13">Hidalgo</option>
+          <option value="14">Jalisco</option>
+          <option value="15">México</option>
+          <option value="16">Michoacán de Ocampo</option>
+          <option value="17">Morelos</option>
+          <option value="18">Nayarit</option>
+          <option value="19">Nuevo León</option>
+          <option value="20">Oaxaca</option>
+          <option value="21">Puebla</option>
+          <option value="22">Querétaro</option>
+          <option value="23">Quintana Roo</option>
+          <option value="24">San Luis Potosí</option>
+          <option value="25">Sinaloa</option>
+          <option value="26">Sonora</option>
+          <option value="27">Tabasco</option>
+          <option value="28">Tamaulipas</option>
+          <option value="29">Tlaxcala</option>
+          <option value="30">Veracruz de Ignacio de la Llave</option>
+          <option value="31">Yucatán</option>
+          <option value="32">Zacatecas</option>
+        </select>
+        <span id="prueba"> 
+          <select name="prueba2" id="prueba2">
+            <option value="0"></option>
+          </select>
+
+        </span>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <button class="switch mt-1" id="switch">
+          <span>
+            
+          </span>
+          <span>
+            
+          </span>
+        </button>
+      </div>
+    </div>
+    
+
+    
+
+    <div class="row">
+      <div class="col text-center text-md-right">
+        <div id="clima-icon"> <i class="wi wi-day-sunny"></i></div>
+      </div>
+      <div class="col text-center text-md-left" id="temp-icon"><p class="temp">23&deg</p>
+        <p>Bonito día</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col"></div>
+      <div class="col text-right">
+        <i class="wi wi-strong-wind"></i>
+        <div id="winds2">
+          
+        </div>
+      </div>
+      <div class="col text-center">
+        <i class="wi wi-thermometer-exterior"></i>
+        <div id="min_temp"></div>
+      </div>
+      <div class="col text-left">
+        <i class="wi wi-thermometer"></i>
+        <div id="max_temp"></div>
+      </div>
+      <div class="col"></div>
+    </div>  
+    
+
+   </div>
+
+
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/estados.js"></script>
+  <script>
+
+
+
+  </script>
+</body>
+</html>
