@@ -59,7 +59,7 @@ function ciudad(){
   console.log(seleccionNameCiudad);
   localStorage.setItem('ciudad2', seleccionNameCiudad);
 
-  axios.get('http://api.openweathermap.org/data/2.5/weather?q='+seleccionNameCiudad+'&appid=01ba69f16632f972aa1d53518621137c&units=metric&lang=es')
+  axios.get('https://api.openweathermap.org/data/2.5/weather?q='+seleccionNameCiudad+'&appid=01ba69f16632f972aa1d53518621137c&units=metric&lang=es')
   .then(function (response){
     console.log(response.data);
     description = response.data.weather[0].description;
